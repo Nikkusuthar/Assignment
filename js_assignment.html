@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Assignment</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Module (javascript Basic & Dom) - 4</h1>
+        <hr>
+        <p><b>1. What is JavaScript?</b></p>
+        <p>= JavaScript is a lightweight scripting and programming language that web developers commonly use to create
+            more dynamic interactions when developing web pages, applications, servers, and or even games. <br>
+            every time a web page does more than <br>
+            just sit there and display static information for you to look at. displaying timely content updates,
+            interactive maps ,animated 3d/2d graphics ,scrolling videos jukeboxes etc.
+        </p><br>
+
+
+        <p><b>2. What is the use of isNuN function ?</b></p>
+        <p>= Full form of NaN funcion is Not a Number. The isNaN () function is used to check whether a given value is
+            an illegal number or not. It returns true if value is a NaN else returns false. It is different from the
+            Number.isNaN () Method.</p><br>
+
+
+        <p><b>3. What is negative Infinity ?</b></p>
+        <p>= The negative infinity in JavaScript is a constant value which is used to represent a value which is the
+            lowest available. This means that no other number is
+            lesser than this value. It can be generated using a self-made function or by an arithmetic operation. <br>
+            - Negative infinity is different from mathematical infinity in the following ways: <br>
+            - Negative infinity results in 0 when divided by any other number. <br>
+            - When divided by itself or positive infinity, negative infinity return NaN <br>
+            - Negative infinity, when divided by any positive number (apart from positive infinity) is negative
+            infinity. <br>
+            - Negative infinity, divided by any negative number (apart from negative infinity) is positive infinity.
+            <br>
+            - If we multiply negative infinity with NaN, we will get NaN as a result. <br>
+            - The product of NaN and negative infinity is 0. <br>
+            - The product of two negative infinities is always a positive infinity. <br>
+        </p><br>
+
+        <p><b>4. Which compony developed Javascript?</b></p>
+        <p>= JavaScript was invented by Brendan Eich in 1995. <br>
+            It was developed for Netscape 2, and became the ECMA-262 standard in 1997. <br>
+            After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for
+            the Firefox browser. <br>
+            Mozilla's latest version was 1.8.5. (Identical to ES5). <br>
+            Internet Explorer (IE4) was the first browser to support ECMA-262 Edition 1 (ES1). <br>
+        </p><br>
+
+        <p><b>5. What are undeclared and undefined variables?</b></p>
+        <p>= Undefined variable means a variable has been declared but does not have a value. <br>
+            Undeclared variable means that the variable does not exist in the program at all.
+        </p><br>
+
+        <p><b>6. Write the code for adding new elements dynamically ?</b></p>
+        <p>= New elements can be created in JS by using the createElement() method. <br>
+            let newElement = document.createElement("&lt;createdElement&gt;"); <br>
+            This code will add the new element inside the programme.
+        </p><br>
+
+
+        <p><b>7. What is the defference between Viewstate and SessionState?</b></p>
+        <p>Session State contains information that is pertaining to a specific session (by a particular
+            client/browser/machine) with the server. <br>
+            It's a way to track what the user is doing on the site.. across multiple pages...amid the statelessness of
+            the Web. e.g. the contents of a
+            particular user's shopping cart is session data. Cookies can be used for session state. <br>
+            View State on the other hand is information specific to particular web page. It is stored in a hidden field
+            so that it isn't visible to the user. <br>
+            It is used to maintain the user's illusion that the page remembers what he did on it the last time - dont
+            give him a clean page every time he posts back. <br>
+        </p><br>
+
+        <p><b>8. What is === operator?</b></p>
+        <p>= The strict equality operator (===) checks whether its two operands are equal, returning a Boolean result.
+            Unlike the equality operator, the strict equality <br>
+            operator always considers operands of different types to be different. <br>
+            Examples: <br>
+            console.log(1 === 1); <br>
+            expected output: true <br>
+            console.log('hello' === 'hello'); <br>
+            expected output: true <br>
+            console.log('1' === 1); <br>
+            expected output: false <br>
+        </p><br>
+
+        <p><b>9. How can style/class of an Element be changed ?</b></p>
+        <p> Approach 1: <br>
+            Changing CSS with the help of the style property:=> <br>
+            => document.getElementById("id").style.property = new_style <br>
+            Approach 2: <br>
+            (1) Changing the class itself – We can use two properties that can be used to manipulate the classes. <br>
+            => document.getElementById("id").classList <br>
+            (2) The className Property: This property is used to set the current class of the element to the specified
+            class. <br>
+            => document.getElementById("id").className = class <br>
+        </p><br>
+
+        <p><b>10. How to read and write the file using Javascript?</b></p>
+        <p>= The read and write operations in a file can be done by using some commands. But the module which is
+            required
+            to perform these operations is to be imported. The required module is ‘fs’ which is called as File System
+            module in JavaScript. <br>
+            The read and write operations in a file can be done by using some commands. But the module which is required
+            to perform these operations is to be imported. The required module is ‘fs’ which is called as File System
+            module in JavaScript. <br>
+            After the File System file is imported then, the writeFile() operation is called. The writeFile() method is
+            used to write into the file in JavaScript. The syntax of this method is as follows −<br>
+            code:=> <br>
+            writeFile(path,inputData,callBackFunction) <br>
+            Path − The first parameter is the path of the file or the name of the file into which the input data is to
+            be written.
+            If there is a file already, then the contents in the file are deleted and the input which is given by the
+            user will get updated or if
+            the file is not present, then the file with that will be created in the given path and the input information
+            is written into it. <br>
+            inputData − The second parameter is the input data which contains the data to be written in the file that is
+            opened. <br>
+            callBackFuntion − The third parameter is the function which is the call back function which takes the error
+            as the parameter
+            and shows the fault if the write operation fails. <br>
+        </p> <br>
+
+        <p><b>11. What are all the looping structures in Javascript?</b></p>
+        <p>= Loops offer a quick and easy way to do something repeatedly.You can think of a loop as a computerized
+            version of the game where you tell someone to
+            take X steps in one direction, then Y steps in another. For example, the idea "Go five steps to the east"
+            could be expressed this way as a loop:
+            1> For loop: <br>
+
+            A for loop repeats until a specified condition evaluates to false. <br>
+            When a for loop executes, the following occurs: <br>
+            - The initializing expression initialExpression, if any, is executed. This expression usually initializes
+            one or more loop counters, but the syntax allows
+            an expression of any degree of complexity. This expression can also declare variables. <br>
+            - The conditionExpression expression is evaluated. If the value of conditionExpression is true, the loop
+            statements execute. Otherwise, the for loop
+            terminates. (If the conditionExpression expression is omitted entirely, the condition is assumed to be
+            true.) <br>
+            - The statement executes. To execute multiple statements, use a block statement ({ }) to group those
+            statements. <br>
+            - If present, the update expression incrementExpression is executed.
+            - Control returns to Step 2. <br><br>
+
+            2> do.....while loop <br>
+            The do...while statement repeats until a specified condition evaluates to false. <br>
+            A do...while statement looks as follows: <br>
+            do <br>
+            statement <br>
+            while (condition);<br>
+            statement is always executed once before the condition is checked. (To execute multiple statements, use a
+            block statement ({ }) to group those statements.) <br>
+            If condition is true, the statement executes again. At the end of every execution, the condition is checked.
+            When the condition is false, execution stops,<br>
+            and control passes to the statement following do...while. <br>
+            Example:=> <br>
+            In the following example, the do loop iterates at least once and reiterates until i is no longer less than
+            5. <br>
+
+            let i = 0;<br>
+            do { <br>
+            i += 1; <br>
+            console.log(i); <br>
+            } while (i &lt; 5);<br><br>
+
+            3> while loop: <br>
+            A while statement executes its statements as long as a specified condition evaluates to true. <br>
+            If the condition becomes false, statement within the loop stops executing and control passes to the
+            statement following the loop. <br>
+            The condition test occurs before statement in the loop is executed. If the condition returns true, statement
+            is executed and the condition is tested again. <br>
+            If the condition returns false, execution stops, and control is passed to the statement following while.
+            <br>
+            Example :=> <br>
+            The following while loop iterates as long as n is less than 3: <br>
+            let n = 0; <br>
+            let x = 0; <br>
+            while (n &lt; 3) { <br>
+            n++; <br>
+            x += n; <br>
+            } <br><br>
+            4> for in loop: <br>
+            The for...in statement iterates a specified variable over all the enumerable properties of an object. <br>
+            Example: <br>
+            The following function takes as its argument an object and the object's name. It then iterates over all the
+            object's properties and returns a string that lists the property names and their values. <br>
+            function dumpProps(obj, objName) { <br>
+            let result = ''; <br>
+            for (const i in obj) { <br>
+            result += `${objName}.${i} = ${obj[i]}&lt;br&gt;`; <br>
+            } <br>
+            result += '&lt;hr&gt;';
+            return result; <br>
+            } <br><br>
+            5> for....of loop: <br>
+            The for...of statement creates a loop Iterating over iterable objects (including Array, Map, Set, arguments
+            object and so on),<br>
+            invoking a custom iteration hook with statements to be executed for the value of each distinct property.
+            <br>
+            structure:=. <br>
+            for (variable of object) <br>
+            statement <br>
+            The for...of and for...in statements can also be used with destructuring. <br>
+        </p>
+
+        <p><b>12. How can you convert the string of any base to an integer in Javascript?</b></p>
+        <p>= In JavaScript parseInt() function (or a method) is used to convert the passed in string parameter or value
+            to an integer value itself. <br>
+            This function returns an integer of base which is specified in second argument of parseInt() function. <br>
+            In JavaScript parseInt() function (or a method) is used to convert the passed in string parameter or value
+            to an integ er value itself. <br>
+            This function returns an integer of base which is specified in second argument of parseInt() function.
+            JavaScript parseInt() function returns Nan
+            ( not a number) when the string doesn’t contain number. <br>
+            strucure: <br>
+            parseInt(Value, radix) <br>
+            It accepts a string as a value and converts it to specified radix system (any desired numerical value passed
+            by a user) and returns an integer
+            (corresponding to the passed in numerical radix value). Program to convert string to integer: <br>
+        </p> <br>
+
+
+        <p><b>13. What is the function of the delete operator ?</b></p>
+        <p>= The delete operator removes a property from an object. If the property’s value is an object and there are
+            no more references to the object, the object held by that property is eventually released automatically.</p>
+        <br>
+
+        <p><b>14. What are the all types of Pop up boxes available in javascript ?</b></p>
+        <p> = There are three types of Pop up boxes: <br>
+            = Alert Box :- it’s just displays a message with an ok button. <br>
+            = Syntax:- <br>
+            = Alert(“you are alert here”) <br>
+            = Confirm Box:- A Confirmation message window with the ok And cancel button Pop up . <br>
+            = Syntax:-h <br>
+            = Confirm(“your quary here”) <br>
+            = Prompt Box :- it’s Pop up a dialog Box asking the user to input followed confirmation button. <br>
+            = Syntax:- <br>
+            = Prompt Box(“your prompt here”) <br>
+        </p> <br>
+
+        <p><b>15. What is the use of Void (0)?</b></p>
+        <p>=  Using javascript: , you can run code that does not change the current page. This, used with void(0) means, do nothing - don't reload, don't navigate, do not run any code. <br>
+            The "Link" word is treated as a link by the browser. For example, it's focusable, but it doesn't navigate to a new page. <br>
+            You might have occasionally came across “javascript:void(0)” in an HTML Document. It is often used when inserting an expression in a web page might produce some
+            unwanted effect. <br> To remove this effect, “javascript:void(0)” is used. This expression returns undefined primitive value. This is often used with hyperlinks. <br> Sometimes,
+            you will decide to call some JavaScript from inside a link. Normally, when you click a link, the browser loads a brand new page or refreshes the same page
+            (depending on the URL specified). But you most likely don’t desire this to happen if you have hooked up some JavaScript thereto link.
+            To prevent the page from refreshing, you could use void(0). Using “#” in anchor tag: When writing the following code in the editor, the web page is refreshed after the
+            alert message is shown.
+            </p><br>
+
+
+            <p><b>16. How can a page be forced to load to another page in Javascript?</b></p>
+            <p>=Approach: We can use window. location property inside the script tag to forcefully load another page in Javascript. <br> It is a reference to a Location object that is it
+                represents the current location of the document. We can change the URL of a window by accessing it. <br>
+                We can use window.location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the
+                current location of the document. We can change the URL of a window by accessing it. <br>
+                Example:=> <br>
+                &lt;script&gt; <br>
+                window.location = &lt;Path / URL&lt; <br>
+                &lt;/script&gt; <br>
+                </p> <br>
+
+                <p><b>17. What are the disadvantages of using innerHTML in Javascript?</b></p>
+                <p>=  The use of innerHTML very slow: The process of using innerHTML is much slower as its contents as slowly built, also already parsed contents and elements are
+                    also re-parsed which takes time. <br>
+                    -  Preserves event handlers attached to any DOM elements: The event handlers do not get attached to the new elements created by setting innerHTML
+                    automatically. To do so one has to keep track of the event handlers and attach it to new elements manually. This may cause a memory leak on some browsers. <br>
+                    - Content is replaced everywhere: Either you add, append, delete or modify contents on a webpage using innerHTML, all contents is replaced,
+                    also all the DOM nodes inside that element are reparsed and recreated. <br>
+                    - Appending to innerHTML is not supported: Usually, += is used for appending in JavaScript. But on appending to an Html tag using innerHTML,
+                    the whole tag is re-parsed. <br>
+                    - Old content replaced issue: The old content is replaced even if object.innerHTML = object.innerHTML + ‘html’ is used instead of <br>
+                    - object.innerHTML += ‘html’. There is no way of appending without reparsing the whole innerHTML. Therefore, working with innerHTML becomes very slow. <br>
+                    - String concatenation just does not scale when dynamic DOM elements need to be created as the plus’ and quote openings and closings becomes difficult to track. <br>
+                    - Can break the document: There is no proper validation provided by innerHTML, so any valid HTML code can be used. This may break the document of JavaScript. 
+                    Even broken HTML can be used, which may lead to unexpected problems. <br>
+                    - Can also be used for Cross-site Scripting(XSS): The fact that innerHTML can add text and elements to the webpage, can easily be used by malicious users to
+                    manipulate and display undesirable or harmful elements within other HTML element tags. Cross-site Scripting may also lead to loss, leak and change of sensitive
+                    information. <br>
+                    </p><br>
+
+    </div>
+</body>
+
+</html>
